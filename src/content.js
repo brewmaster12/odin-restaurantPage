@@ -1,4 +1,6 @@
+import restaurantImage from "./assets/restaurant.jpg";
 const image = document.createElement("img");
+image.src = restaurantImage;
 
 const heading = document.createElement("h1");
 heading.textContent = "The Best Restaurant";
