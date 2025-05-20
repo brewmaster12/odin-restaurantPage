@@ -9,9 +9,9 @@ const subtitle = document.createElement("p");
 subtitle.textContent = "This restaurant is so bloody wonderful!";
 
 const content = document.getElementById("content");
-const loadContent = () => {
+const loadHome = () => {
     content.append(image, heading, subtitle);
 }
 
 
-export {loadContent};
+export {loadHome};

@@ -1,5 +1,30 @@
-console.log("Hello world")
+import {loadHome} from "./home.js";
+import {loadMenu} from "./menu.js";
+import {loadAbout} from "./about.js";
 
-import {loadContent} from "./content.js";
+const content = document.getElementById("content");
 
-loadContent();
+function clearContent() {
+    content.textContent = "";
+}
+
+const homeBtn = document.getElementById("homeBtn");
+homeBtn.addEventListener("click", () => {
+    clearContent()
+    loadHome()
+});
+
+const menuBtn = document.getElementById("menuBtn");
+menuBtn.addEventListener("click", () => {
+    clearContent()
+    loadMenu()
+});
+const aboutBtn = document.getElementById("aboutBtn");
+aboutBtn.addEventListener("click", () => {
+    clearContent()
+    loadAbout()
+});
+
+
+loadHome();
+
